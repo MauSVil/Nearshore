@@ -1,0 +1,165 @@
+body {
+  background: #937FE1 !important;
+}
+
+h5 {
+  font-weight: bold !important;
+  text-align: center;
+}
+
+.section1,
+.section2 {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section1 button,
+.section2 button {
+  position: relative;
+  display: flex;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#FF6BCA, #FF78CF, #FF00A8) !important;
+  width: 188px;
+  height: 38px;
+  font-size: 19px;
+  margin-top: 44px;
+  margin-bottom: 19px;
+  margin-left: 38px;
+  padding-left: 37px;
+  padding-top: 6px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.section2 button {
+  padding-left: 9px;
+  font-size: 17px;
+}
+
+.section2 {
+  margin-top: 63px;
+}
+.section2 button {
+  background: linear-gradient(#86BA2B, #2A740D) !important;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(2, 334px);
+  grid-template-rows: 25px 203px;
+  grid-auto-rows: minmax(100px, auto);
+  text-align: center;
+  grid-row-gap: 19px;
+  grid-column-gap: 34px;
+  grid-auto-flow: row;
+  grid-auto-rows: 203px;
+}
+.container1 .item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.container1 .item-1 p {
+  font-weight: bold;
+  color: #FFF;
+  font-size: 24px;
+}
+.container1 .item-2 .container3,
+.container1 .item-3 .container3 {
+  height: 100%;
+  background: #FFF;
+  border-radius: 5.2px;
+}
+.container1 .item-2 .container3 .title,
+.container1 .item-3 .container3 .title {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-top: 42px;
+  padding-left: 14px;
+}
+.container1 .item-2 .container3 .title h5,
+.container1 .item-3 .container3 .title h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 0.64px;
+  line-height: 29px;
+  width: 238px;
+  height: 60px;
+  padding: 0;
+}
+.container1 .item2 {
+  position: relative;
+}
+.container1 .item2 .container3 .icon {
+  position: absolute;
+  background: red;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.container1 .item-23 .container3,
+.container1 .item-33 .container3 {
+  height: 100%;
+  background: #FFF;
+  border-radius: 5.2px;
+}
+.container1 .item-23 .container3 .title,
+.container1 .item-33 .container3 .title {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-top: 42px;
+}
+.container1 .item-23 .container3 .title h5,
+.container1 .item-33 .container3 .title h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 0.64px;
+  line-height: 29px;
+  width: 260px;
+  height: 60px;
+  padding: 0;
+}
+.container1 .item-22 .container3 {
+  height: 100%;
+  background: #FFF;
+  border-radius: 5.2px;
+}
+.container1 .item-22 .container3 .title {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-top: 30px;
+}
+.container1 .item-22 .container3 .title h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 0.64px;
+  line-height: 29px;
+  width: 260px;
+  height: 90px;
+  padding: 0;
+}
+.container1 .item-33 {
+  opacity: 0.2;
+}
+.container1 .item-33 .title h5 {
+  width: 230px;
+}
+
+#b-diff {
+  margin-top: 26px;
+}
+
+/*# sourceMappingURL=Layout.css.map */

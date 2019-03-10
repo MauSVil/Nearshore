@@ -7,6 +7,17 @@ h5 {
   text-align: center;
 }
 
+.user {
+  color: #521DA9;
+  background: #E7E2FE;
+  height: 50px;
+  width: 100vw;
+  font-size: 16px;
+  padding-top: 14px;
+  padding-left: 30px;
+  margin-bottom: 41px;
+}
+
 .section1,
 .section2 {
   display: flex;

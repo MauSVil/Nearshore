@@ -1,16 +1,35 @@
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1023px){
-  .container1{
+  .container1,
+  .container2{
     grid-row-gap: 38px;
   }
+
 }
 
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 767px) {
 
+
   .container1{
-    grid-template-columns: 334px;
+    grid-template-areas: "title"
+                         "card1"
+                         "card2";
+       .title-container{
+         width: 305px;
+       }
+  }
+
+  .container2{
+    grid-template: "title"
+                   "card22"
+                   "card23"
+                   "card24";
+     .title-container{
+       width: 305px;
+     }
+
   }
 }

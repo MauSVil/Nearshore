@@ -1,13 +1,3 @@
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
-  .container1 {
-    grid-row-gap: 38px;
-  }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-  .container1 {
-    grid-template-columns: 334px;
-  }
-}
 body {
   background: #937FE1 !important;
 }
@@ -32,6 +22,7 @@ h5 {
 .section2 {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .center {
@@ -73,18 +64,21 @@ h5 {
 
 .container1 {
   display: grid;
-  grid-template-columns: repeat(2, 334px);
-  grid-template-rows: 25px 203px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: "title title" "card1 card1" "card2 card2";
   text-align: center;
   grid-row-gap: 19px;
   grid-column-gap: 34px;
-  grid-auto-flow: row;
-  grid-auto-rows: 203px;
+}
+.container1 .title-container {
+  height: 25px;
+  width: 668px;
+}
+.container1 .item {
+  width: 334px;
+  height: 203px;
 }
 .container1 .item-1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-area: title;
 }
 .container1 .item-1 p {
   font-weight: bold;
@@ -117,6 +111,7 @@ h5 {
   padding: 0;
 }
 .container1 .item2 {
+  grid-area: card1;
   position: relative;
 }
 .container1 .item2 .container3 .icon {
@@ -127,21 +122,48 @@ h5 {
   bottom: 0;
   left: 0;
 }
-.container1 .item-23 .container3,
-.container1 .item-33 .container3 {
+.container1 .item3 {
+  grid-area: card2;
+}
+
+.container2 {
+  display: grid;
+  grid-template-areas: "title title" "card22 card23" "card24 .";
+  grid-row-gap: 19px;
+  grid-column-gap: 34px;
+}
+.container2 .title-container {
+  height: 25px;
+  width: 668px;
+}
+.container2 .item {
+  width: 334px;
+  height: 203px;
+}
+.container2 .item-21 {
+  grid-area: title;
+  text-align: center;
+}
+.container2 .item-21 p {
+  font-weight: bold;
+  color: #FFF;
+  font-size: 24px;
+}
+.container2 .item-23 .container3,
+.container2 .item-24 .container3 {
   height: 100%;
   background: #FFF;
   border-radius: 5.2px;
 }
-.container1 .item-23 .container3 .title,
-.container1 .item-33 .container3 .title {
+.container2 .item-23 .container3 .title,
+.container2 .item-24 .container3 .title {
   position: relative;
   top: 0;
   left: 0;
   padding-top: 42px;
 }
-.container1 .item-23 .container3 .title h5,
-.container1 .item-33 .container3 .title h5 {
+.container2 .item-23 .container3 .title h5,
+.container2 .item-24 .container3 .title h5 {
   font-size: 20px;
   font-weight: bold;
   color: #000000;
@@ -151,18 +173,21 @@ h5 {
   height: 60px;
   padding: 0;
 }
-.container1 .item-22 .container3 {
+.container2 .item-22 {
+  grid-area: card22;
+}
+.container2 .item-22 .container3 {
   height: 100%;
   background: #FFF;
   border-radius: 5.2px;
 }
-.container1 .item-22 .container3 .title {
+.container2 .item-22 .container3 .title {
   position: relative;
   top: 0;
   left: 0;
   padding-top: 30px;
 }
-.container1 .item-22 .container3 .title h5 {
+.container2 .item-22 .container3 .title h5 {
   font-size: 20px;
   font-weight: bold;
   color: #000000;
@@ -172,10 +197,11 @@ h5 {
   height: 90px;
   padding: 0;
 }
-.container1 .item-33 {
+.container2 .item-24 {
+  grid-area: card24;
   opacity: 0.2;
 }
-.container1 .item-33 .title h5 {
+.container2 .item-24 .title h5 {
   width: 230px;
 }
 
@@ -184,13 +210,24 @@ h5 {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
-  .container1 {
+  .container1,
+.container2 {
     grid-row-gap: 38px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .container1 {
-    grid-template-columns: 334px;
+    grid-template-areas: "title" "card1" "card2";
+  }
+  .container1 .title-container {
+    width: 305px;
+  }
+
+  .container2 {
+    grid-template: "title" "card22" "card23" "card24";
+  }
+  .container2 .title-container {
+    width: 305px;
   }
 }
 

@@ -1,6 +1,5 @@
 @import "Variables";
 @import "Mixins";
-@import "ResponsiveIpad";
 
 
 body{
@@ -29,6 +28,7 @@ h5{
 .section2{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .center{
@@ -70,19 +70,31 @@ h5{
 
 .container1{
   display: grid;
-  grid-template-columns: repeat(2, 334px);
-  grid-template-rows: 25px 203px;
-  grid-auto-rows: minmax(100px, auto);
+  // grid-template-columns: repeat(2, 334px);
+  // grid-template-rows: 25px 203px;
+  // grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: "title title"
+                       "card1 card1"
+                       "card2 card2";
   text-align: center;
   grid-row-gap: 19px;
   grid-column-gap: 34px;
-  grid-auto-flow: row;
-  grid-auto-rows: 203px;
+  // grid-auto-flow: row;
+  // grid-auto-rows: 203px;
   // @include Container(repeat(2,334px), 25px 203px, 34px, 19px)
 
+.title-container{
+  height: 25px;
+  width: 668px;
+}
+
+.item{
+  width: 334px;
+  height: 203px;
+}
+
   .item-1{
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-area: title;
     p{
       font-weight: bold;
       color: #FFF;
@@ -117,6 +129,7 @@ h5{
   }
 
   .item2{
+    grid-area: card1;
     position: relative;
     .container3{
       .icon{
@@ -130,64 +143,99 @@ h5{
     }
   }
 
-  .item-23,
-  .item-33{
-    .container3{
-      height: 100%;
-      background: #FFF;
-      border-radius: 5.2px;
-      .title{
-        position: relative;
-        top: 0;
-        left: 0;
-        padding-top: 42px;
-        h5{
-          font-size: 20px;
-          font-weight: bold;
-          color: #000000;
-          letter-spacing: 0.64px;
-          line-height: 29px;
-          width: 260px;
-          height: 60px;
-          padding: 0;
+  .item3{
+    grid-area: card2;
+  }
+
+}
+
+.container2{
+  display: grid;
+  grid-template-areas: "title title"
+                      "card22 card23"
+                        "card24 .";
+  grid-row-gap: 19px;
+  grid-column-gap: 34px;
+
+  .title-container{
+    height: 25px;
+    width: 668px;
+  }
+
+  .item{
+    width: 334px;
+    height: 203px;
+  }
+
+    .item-21{
+      grid-area: title;
+      text-align: center;
+      p{
+        font-weight: bold;
+        color: #FFF;
+        font-size: 24px;
+      }
+    }
+    .item-23,
+    .item-24{
+      .container3{
+        height: 100%;
+        background: #FFF;
+        border-radius: 5.2px;
+        .title{
+          position: relative;
+          top: 0;
+          left: 0;
+          padding-top: 42px;
+          h5{
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            letter-spacing: 0.64px;
+            line-height: 29px;
+            width: 260px;
+            height: 60px;
+            padding: 0;
+          }
         }
       }
     }
-  }
 
-  .item-22{
-    .container3{
-      height: 100%;
-      background: #FFF;
-      border-radius: 5.2px;
-      .title{
-        position: relative;
-        top: 0;
-        left: 0;
-        padding-top: 30px;
-        h5{
-          font-size: 20px;
-          font-weight: bold;
-          color: #000000;
-          letter-spacing: 0.64px;
-          line-height: 29px;
-          width: 260px;
-          height: 90px;
-          padding: 0;
+    .item-22{
+      grid-area: card22;
+      .container3{
+        height: 100%;
+        background: #FFF;
+        border-radius: 5.2px;
+        .title{
+          position: relative;
+          top: 0;
+          left: 0;
+          padding-top: 30px;
+          h5{
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            letter-spacing: 0.64px;
+            line-height: 29px;
+            width: 260px;
+            height: 90px;
+            padding: 0;
+          }
         }
       }
     }
-  }
 
-  .item-33{
-    opacity: 0.2;
-    .title{
+    .item-24{
+      grid-area: card24;
+      opacity: 0.2;
+      .title{
 
-      h5{
-        width: 230px;
+        h5{
+          width: 230px;
+        }
       }
     }
-  }
 }
 
 #b-diff{

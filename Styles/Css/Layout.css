@@ -1,5 +1,6 @@
 body {
   background: #937FE1 !important;
+  font-family: "TodaySHOP-Bold" !important;
 }
 
 h5 {
@@ -216,18 +217,124 @@ h5 {
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .section1 button,
+.section2 button {
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#FF6BCA, #FF78CF, #FF00A8) !important;
+    width: 91px;
+    height: 28px;
+    font-size: 19px;
+    margin-top: 16px;
+    margin-bottom: 19px;
+    margin-left: 55px;
+    padding-left: 9px;
+    padding-top: 6px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 11.5px;
+  }
+
+  .section2 {
+    margin-top: 6px;
+  }
+  .section2 button {
+    font-size: 13px;
+    margin-top: 0px;
+    width: 145px;
+    margin-left: 28px;
+    background: linear-gradient(#86BA2B, #2A740D) !important;
+    padding-left: 7px;
+  }
+
+  #b-diff {
+    margin-top: 0px;
+  }
+
   .container1 {
     grid-template-areas: "title" "card1" "card2";
+    grid-row-gap: 6px;
   }
   .container1 .title-container {
-    width: 305px;
+    width: 257px;
+  }
+  .container1 .item {
+    width: 257px;
+    height: 106px;
+  }
+  .container1 .item-1 p {
+    font-size: 14px;
+  }
+  .container1 .item-2 .container3,
+.container1 .item-3 .container3 {
+    height: 100%;
+    background: #FFF;
+    border-radius: 5.2px;
+  }
+  .container1 .item-2 .container3 .title,
+.container1 .item-3 .container3 .title {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 17px;
+    padding-left: 6px;
+  }
+  .container1 .item-2 .container3 .title h5,
+.container1 .item-3 .container3 .title h5 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 0.64px;
+    line-height: 21px;
+    width: 189px;
+    height: 39px;
+    padding: 0;
   }
 
   .container2 {
     grid-template: "title" "card22" "card23" "card24";
+    grid-row-gap: 6px;
   }
   .container2 .title-container {
-    width: 305px;
+    width: 257px;
+  }
+  .container2 .item {
+    width: 257px;
+    height: 105px;
+  }
+  .container2 .item-21 p {
+    font-size: 14px;
+  }
+  .container2 .item-22 .container3,
+.container2 .item-23 .container3,
+.container2 .item-24 .container3 {
+    height: 100%;
+    background: #FFF;
+    border-radius: 5.2px;
+  }
+  .container2 .item-22 .container3 .title,
+.container2 .item-23 .container3 .title,
+.container2 .item-24 .container3 .title {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 11px;
+    padding-left: 6px;
+  }
+  .container2 .item-22 .container3 .title h5,
+.container2 .item-23 .container3 .title h5,
+.container2 .item-24 .container3 .title h5 {
+    font-size: 16.5px;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 0.64px;
+    line-height: 18px;
+    width: 200px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
   }
 }
 

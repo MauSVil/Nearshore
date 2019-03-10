@@ -1,3 +1,13 @@
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .container1 {
+    grid-row-gap: 38px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .container1 {
+    grid-template-columns: 334px;
+  }
+}
 body {
   background: #937FE1 !important;
 }
@@ -171,6 +181,17 @@ h5 {
 
 #b-diff {
   margin-top: 26px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .container1 {
+    grid-row-gap: 38px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .container1 {
+    grid-template-columns: 334px;
+  }
 }
 
 /*# sourceMappingURL=Layout.css.map */

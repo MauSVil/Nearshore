@@ -1,6 +1,6 @@
 @import "Variables";
 @import "Mixins";
-// @import "ResponsiveIpad";
+@import "ResponsiveIpad";
 
 
 body{
@@ -193,3 +193,5 @@ h5{
 #b-diff{
   margin-top: 26px;
 }
+
+@import "ResponsiveIpad";

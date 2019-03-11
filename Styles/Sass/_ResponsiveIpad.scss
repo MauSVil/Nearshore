@@ -54,7 +54,7 @@ and (max-device-width : 767px) {
     grid-template-areas: "title"
                          "card1"
                          "card2";
-    grid-row-gap: 6px;
+    grid-row-gap: 9px;
        .title-container{
          width: 257px;
        }
@@ -95,6 +95,48 @@ and (max-device-width : 767px) {
           }
         }
       }
+
+      .item-2{
+        .container3{
+          .icon{
+            p{
+              position: absolute;
+                top: -119px;
+                right: 0px;
+                left: 200px;
+                bottom: -3px;
+                display: flex;
+                background: #E9F2DF;
+                justify-content: center;
+                align-items: center;
+                img{
+                  width: 32px;
+                }
+              }
+          }
+        }
+      }
+
+      .item-3{
+        .container3{
+          .icon{
+            p{
+              position: absolute;
+                top: -119px;
+                right: 0px;
+                left: 200px;
+                bottom: -3px;
+                display: flex;
+                background: #E9F2DF;
+                justify-content: center;
+                align-items: center;
+                img{
+                  width: 32px;
+                }
+              }
+          }
+        }
+      }
   }
 
   .container2{
@@ -102,13 +144,13 @@ and (max-device-width : 767px) {
                    "card22"
                    "card23"
                    "card24";
-    grid-row-gap: 6px;
+    grid-row-gap: 9px;
      .title-container{
        width: 257px;
      }
      .item{
        width: 257px;
-       height: 105px;
+       height: 106px;
      }
 
      .item-21{
@@ -141,6 +183,49 @@ and (max-device-width : 767px) {
              padding: 0;
              margin: 0;
            }
+         }
+       }
+     }
+
+     .item-22,
+     .item-23{
+       .container3{
+         .icon{
+           p{
+             position: absolute;
+               top: -118px;
+               right: 0px;
+               left: 200px;
+               bottom: -4px;
+               display: flex;
+               background: #FFECD6;
+               justify-content: center;
+               align-items: center;
+               img{
+                 width: 32px;
+               }
+             }
+         }
+       }
+     }
+
+     .item-24{
+       .container3{
+         .icon{
+           p{
+             position: absolute;
+               top: -118px;
+               right: 0px;
+               left: 200px;
+               bottom: -4px;
+               display: flex;
+               background: #7A64CC;
+               justify-content: center;
+               align-items: center;
+               img{
+                 width: 32px;
+               }
+             }
          }
        }
      }

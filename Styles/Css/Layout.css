@@ -65,7 +65,7 @@ h5 {
 
 .container1 {
   display: grid;
-  grid-template-areas: "title title" "card1 card1" "card2 card2";
+  grid-template-areas: "title title" "card1 card2";
   text-align: center;
   grid-row-gap: 19px;
   grid-column-gap: 34px;
@@ -111,20 +111,52 @@ h5 {
   height: 60px;
   padding: 0;
 }
-.container1 .item2 {
+.container1 .item-2 {
   grid-area: card1;
   position: relative;
 }
-.container1 .item2 .container3 .icon {
-  position: absolute;
-  background: red;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.container1 .item-2 .container3 .icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: auto;
 }
-.container1 .item3 {
+.container1 .item-2 .container3 .icon p {
+  border-radius: 4px;
+  position: absolute;
+  top: -203px;
+  right: 0;
+  left: 245px;
+  bottom: -16px;
+  display: flex;
+  background: #E9F2DF;
+  justify-content: center;
+  align-items: center;
+}
+.container1 .item-3 {
   grid-area: card2;
+}
+.container1 .item-3 .icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: auto;
+}
+.container1 .item-3 .icon p {
+  border-radius: 4px;
+  position: absolute;
+  top: -203px;
+  right: 0;
+  left: 245px;
+  bottom: -16px;
+  display: flex;
+  background: #E9F2DF;
+  justify-content: center;
+  align-items: center;
 }
 
 .container2 {
@@ -198,12 +230,72 @@ h5 {
   height: 90px;
   padding: 0;
 }
+.container2 .item-22 .container3 .icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: auto;
+}
+.container2 .item-22 .container3 .icon p {
+  border-radius: 4px;
+  position: absolute;
+  top: -203px;
+  right: 0;
+  left: 245px;
+  bottom: -16px;
+  display: flex;
+  background: #FFECD6;
+  justify-content: center;
+  align-items: center;
+}
+.container2 .item-23 .container3 .icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: auto;
+}
+.container2 .item-23 .container3 .icon p {
+  border-radius: 4px;
+  position: absolute;
+  top: -203px;
+  right: 0;
+  left: 245px;
+  bottom: -16px;
+  display: flex;
+  background: #FFECD6;
+  justify-content: center;
+  align-items: center;
+}
 .container2 .item-24 {
   grid-area: card24;
   opacity: 0.2;
 }
 .container2 .item-24 .title h5 {
   width: 230px;
+}
+.container2 .item-24 .icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: auto;
+}
+.container2 .item-24 .icon p {
+  border-radius: 4px;
+  position: absolute;
+  top: -203px;
+  right: 0;
+  left: 245px;
+  bottom: -16px;
+  display: flex;
+  background: #7A64CC;
+  justify-content: center;
+  align-items: center;
 }
 
 #b-diff {
@@ -255,7 +347,7 @@ h5 {
 
   .container1 {
     grid-template-areas: "title" "card1" "card2";
-    grid-row-gap: 6px;
+    grid-row-gap: 9px;
   }
   .container1 .title-container {
     width: 257px;
@@ -292,17 +384,45 @@ h5 {
     height: 39px;
     padding: 0;
   }
+  .container1 .item-2 .container3 .icon p {
+    position: absolute;
+    top: -119px;
+    right: 0px;
+    left: 200px;
+    bottom: -3px;
+    display: flex;
+    background: #E9F2DF;
+    justify-content: center;
+    align-items: center;
+  }
+  .container1 .item-2 .container3 .icon p img {
+    width: 32px;
+  }
+  .container1 .item-3 .container3 .icon p {
+    position: absolute;
+    top: -119px;
+    right: 0px;
+    left: 200px;
+    bottom: -3px;
+    display: flex;
+    background: #E9F2DF;
+    justify-content: center;
+    align-items: center;
+  }
+  .container1 .item-3 .container3 .icon p img {
+    width: 32px;
+  }
 
   .container2 {
     grid-template: "title" "card22" "card23" "card24";
-    grid-row-gap: 6px;
+    grid-row-gap: 9px;
   }
   .container2 .title-container {
     width: 257px;
   }
   .container2 .item {
     width: 257px;
-    height: 105px;
+    height: 106px;
   }
   .container2 .item-21 p {
     font-size: 14px;
@@ -335,6 +455,36 @@ h5 {
     height: 60px;
     padding: 0;
     margin: 0;
+  }
+  .container2 .item-22 .container3 .icon p,
+.container2 .item-23 .container3 .icon p {
+    position: absolute;
+    top: -118px;
+    right: 0px;
+    left: 200px;
+    bottom: -4px;
+    display: flex;
+    background: #FFECD6;
+    justify-content: center;
+    align-items: center;
+  }
+  .container2 .item-22 .container3 .icon p img,
+.container2 .item-23 .container3 .icon p img {
+    width: 32px;
+  }
+  .container2 .item-24 .container3 .icon p {
+    position: absolute;
+    top: -118px;
+    right: 0px;
+    left: 200px;
+    bottom: -4px;
+    display: flex;
+    background: #7A64CC;
+    justify-content: center;
+    align-items: center;
+  }
+  .container2 .item-24 .container3 .icon p img {
+    width: 32px;
   }
 }
 

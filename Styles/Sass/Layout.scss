@@ -75,8 +75,7 @@ h5{
   // grid-template-rows: 25px 203px;
   // grid-auto-rows: minmax(100px, auto);
   grid-template-areas: "title title"
-                       "card1 card1"
-                       "card2 card2";
+                       "card1 card2";
   text-align: center;
   grid-row-gap: 19px;
   grid-column-gap: 34px;
@@ -129,23 +128,55 @@ h5{
     }
   }
 
-  .item2{
+  .item-2{
     grid-area: card1;
     position: relative;
     .container3{
       .icon{
-        position:absolute;
-        background: red;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: auto;
+        p{
+          border-radius: 4px;
+          position: absolute;
+          top: -203px;
+          right: 0;
+          left: 245px;
+          bottom: -16px;
+          display: flex;
+          background: #E9F2DF;
+          justify-content: center;
+          align-items: center;
+        }
       }
     }
   }
 
-  .item3{
+  .item-3{
     grid-area: card2;
+    .icon{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0px;
+      margin-bottom: auto;
+      p{
+        border-radius: 4px;
+        position: absolute;
+        top: -203px;
+        right: 0;
+        left: 245px;
+        bottom: -16px;
+        display: flex;
+        background: #E9F2DF;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 
 }
@@ -199,6 +230,7 @@ h5{
             padding: 0;
           }
         }
+
       }
     }
 
@@ -224,6 +256,51 @@ h5{
             padding: 0;
           }
         }
+        .icon{
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 0px;
+          margin-bottom: auto;
+          p{
+            border-radius: 4px;
+            position: absolute;
+            top: -203px;
+            right: 0;
+            left: 245px;
+            bottom: -16px;
+            display: flex;
+            background: #FFECD6;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .item-23{
+      .container3{
+        .icon{
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 0px;
+          margin-bottom: auto;
+          p{
+            border-radius: 4px;
+            position: absolute;
+            top: -203px;
+            right: 0;
+            left: 245px;
+            bottom: -16px;
+            display: flex;
+            background: #FFECD6;
+            justify-content: center;
+            align-items: center;
+          }
+        }
       }
     }
 
@@ -231,9 +308,28 @@ h5{
       grid-area: card24;
       opacity: 0.2;
       .title{
-
         h5{
           width: 230px;
+        }
+      }
+      .icon{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: auto;
+        p{
+          border-radius: 4px;
+          position: absolute;
+          top: -203px;
+          right: 0;
+          left: 245px;
+          bottom: -16px;
+          display: flex;
+          background: #7A64CC;
+          justify-content: center;
+          align-items: center;
         }
       }
     }

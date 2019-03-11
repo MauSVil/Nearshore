@@ -1,0 +1,166 @@
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1023px){
+  .container1,
+  .container2{
+    grid-row-gap: 38px;
+  }
+
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 767px) {
+
+  .section1 button,
+  .section2 button{
+    @include Button(91px,28px,16px,19px,55px,9px,11.5px);
+  }
+
+  .section2 {
+    margin-top: 6px;
+    button{
+      @include Button(145px,28px,0px,19px,28px,7px,13px);
+      background: $button2-color !important;
+    }
+  }
+
+  #b-diff{
+    margin-top: 0px;
+  }
+
+
+
+  .container1{
+    grid-template-areas: "title"
+                         "card1"
+                         "card2";
+    grid-row-gap: 9px;
+       .title-container{
+         width: 257px;
+       }
+
+      .item{
+        width: 257px;
+        height: 106px;
+      }
+
+      .item-1{
+        p{
+          font-size: 14px;
+        }
+      }
+
+      .item-2,
+      .item-3{
+        .container3{
+          .title{
+            padding-top: 17px;
+            padding-left: 6px;
+            h5{
+              font-size: 15px;
+              line-height: 21px;
+              width: 189px;
+              height: 39px;
+            }
+          }
+        }
+      }
+
+      .item-2{
+        .container3{
+          .icon{
+            p{
+                @include Position(-119px,0px,-3px,200px,#E9F2DF);
+                img{
+                  width: 32px;
+                }
+              }
+          }
+        }
+      }
+
+      .item-3{
+        .container3{
+          .icon{
+            p{
+              @include Position(-119px,0px,-3px,200px,#E9F2DF);
+                img{
+                  width: 32px;
+                }
+              }
+          }
+        }
+      }
+  }
+
+  .container2{
+    grid-template: "title"
+                   "card22"
+                   "card23"
+                   "card24";
+    grid-row-gap: 9px;
+
+     .title-container{
+       width: 257px;
+     }
+
+     .item{
+       width: 257px;
+       height: 106px;
+     }
+
+     .item-21{
+       p{
+         font-size: 14px;
+       }
+     }
+
+     .item-22,
+     .item-23,
+     .item-24{
+       .container3{
+         .title{
+           padding-top: 11px;
+           padding-left: 6px;
+           h5{
+             font-size: 16.5px;
+             line-height: 18px;
+             width: 200px;
+             height: 60px;
+             padding: 0;
+             margin: 0;
+           }
+         }
+       }
+     }
+
+     .item-22,
+     .item-23{
+       .container3{
+         .icon{
+           p{
+            @include Position(-118px,0px,-4px,200px,#FFECD6);
+               img{
+                 width: 32px;
+               }
+             }
+         }
+       }
+     }
+
+     .item-24{
+       .container3{
+         .icon{
+           p{
+            @include Position(-118px,0px,-4px,200px,#7A64CC);
+            img{
+              width: 32px;
+               }
+            }
+         }
+       }
+     }
+
+  }
+}

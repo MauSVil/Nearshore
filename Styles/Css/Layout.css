@@ -48,7 +48,6 @@ h5 {
   padding-top: 6px;
   color: #FFF;
   font-weight: bold;
-  font-size: 19px;
 }
 
 .section2 button {
@@ -127,7 +126,7 @@ h5 {
   border-radius: 4px;
   position: absolute;
   top: -203px;
-  right: 0;
+  right: 0px;
   left: 245px;
   bottom: -16px;
   display: flex;
@@ -150,7 +149,7 @@ h5 {
   border-radius: 4px;
   position: absolute;
   top: -203px;
-  right: 0;
+  right: 0px;
   left: 245px;
   bottom: -16px;
   display: flex;
@@ -281,7 +280,7 @@ h5 {
   left: 245px;
   bottom: -16px;
   display: flex;
-  background: #7A64CC;
+  background: #FFECD6;
   justify-content: center;
   align-items: center;
 }
@@ -299,25 +298,43 @@ h5 {
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .section1 button,
 .section2 button {
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#FF6BCA, #FF78CF, #FF00A8) !important;
     width: 91px;
     height: 28px;
+    font-size: 11.5px;
     margin-top: 16px;
     margin-bottom: 19px;
     margin-left: 55px;
     padding-left: 9px;
-    font-size: 11.5px;
+    padding-top: 6px;
+    color: #FFF;
+    font-weight: bold;
   }
 
   .section2 {
     margin-top: 6px;
   }
   .section2 button {
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#FF6BCA, #FF78CF, #FF00A8) !important;
+    width: 145px;
+    height: 28px;
     font-size: 13px;
     margin-top: 0px;
-    width: 145px;
+    margin-bottom: 19px;
     margin-left: 28px;
-    background: linear-gradient(#86BA2B, #2A740D) !important;
     padding-left: 7px;
+    padding-top: 6px;
+    color: #FFF;
+    font-weight: bold;
+    background: linear-gradient(#86BA2B, #2A740D) !important;
   }
 
   #b-diff {
@@ -351,19 +368,31 @@ h5 {
     height: 39px;
   }
   .container1 .item-2 .container3 .icon p {
+    border-radius: 4px;
+    position: absolute;
     top: -119px;
     right: 0px;
     left: 200px;
     bottom: -3px;
+    display: flex;
+    background: #E9F2DF;
+    justify-content: center;
+    align-items: center;
   }
   .container1 .item-2 .container3 .icon p img {
     width: 32px;
   }
   .container1 .item-3 .container3 .icon p {
+    border-radius: 4px;
+    position: absolute;
     top: -119px;
     right: 0px;
     left: 200px;
     bottom: -3px;
+    display: flex;
+    background: #E9F2DF;
+    justify-content: center;
+    align-items: center;
   }
   .container1 .item-3 .container3 .icon p img {
     width: 32px;
@@ -401,6 +430,7 @@ h5 {
   }
   .container2 .item-22 .container3 .icon p,
 .container2 .item-23 .container3 .icon p {
+    border-radius: 4px;
     position: absolute;
     top: -118px;
     right: 0px;
@@ -416,6 +446,7 @@ h5 {
     width: 32px;
   }
   .container2 .item-24 .container3 .icon p {
+    border-radius: 4px;
     position: absolute;
     top: -118px;
     right: 0px;
